@@ -14,15 +14,13 @@ li .active-page {
   .navbar .navbar-brand {
     color: #5a5c5d;
     font-family: card-font, "Roboto Condensed", Arial, sans-serif !important;
-    letter-spacing: -.06em;
-    font-size: 30px; }
+    letter-spacing: -.06em;}
   .navbar .subdued {
     color: #a7a8a9 !important; }
   .navbar #bs-example-navbar-collapse-1 {
     border: white !important; }
   .navbar a {
     font-family: "Roboto Condensed", Arial, sans-serif;
-    font-size: 20px;
     color: #5a5c5d;
     margin-top: 19.25px; }
     .navbar a:hover {
@@ -30,11 +28,18 @@ li .active-page {
   .navbar .navbar-brand {
     font-weight: bold;
     font-family: "Roboto Condensed", Arial, sans-serif;
-    font-size: 30px;
     color: #5a5c5d;
     margin-top: 19.25px; }
     .navbar .navbar-brand:hover {
       color: black !important; }
+   @media screen and (min-width: 769px)
+   {
+	font-size: 4vw;
+   }
+   @media screen and (max-width: 768px)
+   {
+	font-size: 4vw;
+   }
   .navbar button {
     border: #5a5c5d;
     background: #5a5c5d;
@@ -90,19 +95,27 @@ li .active-page {
 
 .title-text {
   font-family: card-font, "Roboto Condensed", Arial, sans-serif; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     .title-text {
       display: none; } }
   .title-text h1 {
-    font-size: 64px;
     line-height: 91.8px;
     color: white; }
+    @media screen and (max-width: 991px) {
+    .title-text {
+      margin-top: 88.54167; } }
+    .h1{
+	font-size: 60px;
+    }
   @media screen and (max-width: 767px) {
     .title-text {
       margin-top: 189.58333px; } }
-  @media screen and (max-width: 991px) {
-    .title-text {
-      margin-top: 88.54167; } }
+    .title-text h1{
+	font-size: 3.8vw;
+    }
+  
+
+    .title-text
   @media screen and (max-width: 1199px) {
     .title-text {
       margin-top: 27.08333vh; } }
@@ -112,6 +125,9 @@ li .active-page {
   @media screen and (max-width: 600px) {
     .title-text {
       margin-top: 183.75px; } }
+
+
+
 
 .contact-forms h1 {
   font-size: 64px;
@@ -304,3 +320,32 @@ h1, p, button {
     position: absolute;
 }
 /*# sourceMappingURL=app.css.map */
+
+@media screen and (max-width: 767px){
+    .navbar-custom-brand 
+    {
+	font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar-custom-brand 
+    {
+	font-size: 2vw !important;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navbar-custom-link
+    {
+	font-size: 4vw !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar-custom-link 
+    {
+	font-size: 1.5vw !important;
+    }
+}
+}
