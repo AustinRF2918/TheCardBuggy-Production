@@ -49,6 +49,13 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
+	<div class="show-it-to-me">
+		<div class="m-t-3 text-center">
+		       
+		  <h1>Get In <strong>Touch</strong></h1>
+		  <p>Give us a call or email us any time of the day and we will be ready to answer your question.</p>
+		</div>
+	    </div>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
