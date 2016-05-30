@@ -15,6 +15,7 @@
 
     <!-- Custom CSS -->
     <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -26,7 +27,7 @@
 
 </head>
 
-<body>
+<body ng-app="cardBuggyApplication">
     <!-- Full Page Background -->
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -60,7 +61,7 @@
         <!-- /.container -->
     </nav>
 	
-<div class="content">
+<div class="content" ng-controller="formValidator">
         <div class="container">
   	    <div class="show-it-to-me">
 		<div class="m-t-3 text-center">
@@ -68,7 +69,7 @@
 		  <h1>Get In <strong>Touch</strong></h1>
 		  <p>Give us a call or email us any time of the day and we will be ready to answer your question.</p>
 		</div>
-	    </div>
+	    </divcardBuggyApplication
 		<div class="row">
                 <div class="col-sm-12">
                 <div class="col-sm-5">
@@ -118,8 +119,20 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"</script>
+    <!-- Custom Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+    <!-- Other s-->
+
 
 
 </body>
