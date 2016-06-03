@@ -3,7 +3,7 @@ var cardBuggyApplication = angular.module("cardBuggyApplication", ['ngAnimate'])
 cardBuggyApplication.controller("formValidator", function($scope, $http){
     $scope.badFlag = false;
     $scope.goodFlag = false;
-    
+
     $scope.name = "";
     $scope.nameGood = false;
 
@@ -16,7 +16,6 @@ cardBuggyApplication.controller("formValidator", function($scope, $http){
     $scope.message = "";
     $scope.messageGood = false;
 
-    
     $scope.submit = function(){
 	$http({
 	    method: 'POST',
@@ -57,7 +56,7 @@ cardBuggyApplication.controller("formValidator", function($scope, $http){
 	    {
 		$scope.email = "";
 	    }
-	    
+
 	    if ($scope.phoneGood == false)
 	    {
 		$scope.phone = "";
@@ -75,7 +74,7 @@ cardBuggyApplication.controller("formValidator", function($scope, $http){
 	$scope.badFlag = false;
 	$scope.goodFlag = false;
     }
-    
+
     $scope.focusForm = function(numeric){
 	if (numeric == 1)
 	{
@@ -139,7 +138,7 @@ cardBuggyApplication.controller("formValidator", function($scope, $http){
 	    $scope.emailGood = true;
 	    stylizeInput($("#email"), "form-invalid", "form-valid", $scope.emailGood);
 	}
-	else 
+	else
 	{
 	    $scope.emailGood = false;
 	    stylizeInput($("#email"), "form-invalid", "form-valid", $scope.emailGood);
@@ -158,14 +157,14 @@ cardBuggyApplication.controller("formValidator", function($scope, $http){
 	    $scope.phoneGood = true;
 	    stylizeInput($("#phone"), "form-invalid", "form-valid", $scope.phoneGood);
 	}
-	else 
+	else
 	{
 	    $scope.phoneGood = false;
 	    stylizeInput($("#phone"), "form-invalid", "form-valid", $scope.phoneGood);
 	}
 	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
     };
-    
+
     $scope.checkMessage = function()
     {
 	defocusInput($("#phone"), $scope.phoneGood, "form-valid");
@@ -177,7 +176,7 @@ cardBuggyApplication.controller("formValidator", function($scope, $http){
 	    $scope.messageGood = true;
 	    stylizeInput($("#input"), "form-invalid", "form-valid", $scope.messageGood);
 	}
-	else  
+	else
 	{
 	    $scope.messageGood = false;
 	    stylizeInput($("#input"), "form-invalid", "form-valid", $scope.messageGood);
