@@ -43,6 +43,8 @@ cardBuggyApplication.controller("formValidator", function($scope, $http){
 	    $scope.emailGood = false;
 	    $scope.messageGood = false;
 	    $scope.phoneGood = false;
+	    window.location.replace("contact.html");
+
 	}
 	else
 	{
