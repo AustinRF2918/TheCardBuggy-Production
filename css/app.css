@@ -5,6 +5,10 @@ li .active-page {
   color: #5a5c5d !important;
   font-weight: bold; }
 
+.never-show{
+    display: none;
+}
+
 .navbar {
   background: white !important;
   border: white !important;
